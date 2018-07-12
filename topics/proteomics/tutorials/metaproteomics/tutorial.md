@@ -30,7 +30,7 @@ Strait chlorophyll maximum layer (7m depth, 65° 43.44″ N, 168° 57.42″ W). 
 
 ## Data upload
 
-There are a many ways how you can upload your data. Three among these are:
+There are a many ways for you to upload your data. Three among these are:
 
 *   Upload the files from your computer
 *   Using a direct link
@@ -52,7 +52,7 @@ In this tutorial, we will get the data from Zenodo: [![DOI](https://zenodo.org/b
 >    > * Press **Start**
 >    {: .tip}
 >
->    As default, Galaxy takes the link as name.
+>    By default, Galaxy takes the link as the dataset name.
 >
 >    > ### {% icon comment %} Comments
 >    > - Rename the datasets to a more descriptive name
@@ -198,7 +198,7 @@ metapeptide entries. Column 3 is the sequence matched for each PSM entry. Every 
 new row in the tabular output.
 
 In the following steps of this tutorial, selected portions of this output will be extracted and used for
-analysis of the taxonomic make-up of the sample as well as the biochemical functions
+analysis of the taxonomic makeup of the sample as well as the biochemical functions
 represented by the proteins identified.
 
 ## Taxonomy analysis
@@ -223,10 +223,10 @@ proteins and provides a fast matching algorithm for peptides.
 > or operated on within Galaxy.
 {: .tip}
 
-#### Recieving the list of peptides: Query Tabular
+#### Receiving the list of peptides: Query Tabular
 
 In order to use *Unipept*, a list containing the peptide sequences has to be generated.
-The tool **Query Tabular** can load tabular data (the PSM report in this case) into a SQLite data base.
+The tool **Query Tabular** can load tabular data (the PSM report in this case) into a SQLite database.
 As a tabular file is being read, line filters may be applied and an SQL query can be performed.
 
 > ### {% icon hands_on %} Hands-on: Query Tabular
