@@ -7,7 +7,7 @@ tutorial_name: database-handling
 # Introduction
 {:.no_toc}
 
-In mass spectrometry based proteomics experiments, peptides are assigned to experimentally acquired tandem mass spectra (MS2) by a method called as peptide-spectral matching. Peptide spectral matching is commonly achieved by using search algorithms to match the MS2 spectra to theoretical spectra. The theoretical spectra are generated from theoritical digestion of proteins in the FASTA database. Ideally, the protein FASTA databases will contain all proteins of the organism under investigation.
+In mass spectrometry based proteomics experiments, peptides are assigned to experimentally acquired tandem mass spectra (MS2) by a method called peptide-spectral matching. Peptide spectral matching is commonly achieved by using search algorithms to match the MS2 spectra to theoretical spectra. The theoretical spectra are generated from theoritical digestion of proteins in the FASTA database. Ideally, the protein FASTA databases will contain all proteins of the organism under investigation.
 
 > ### Agenda
 >
@@ -21,7 +21,7 @@ In mass spectrometry based proteomics experiments, peptides are assigned to expe
 
 # Uploading a protein search Database
 
-There are a many ways how you can upload your protein search database (FASTA file with protein sequences). Three of these ways are:
+There are a many ways to upload your protein search database (FASTA file with protein sequences). Three of these ways are:
 
 *   Using **Protein Database Downloader** {% icon tool %} .
 *   Using a direct weblink to the database.
@@ -33,7 +33,7 @@ In this tutorial, we will explore **Protein Database Downloader** {% icon tool %
 >
 > 1. Create a new history for this Database Handling exercise.
 > 2. Open **Protein Database Downloader** {% icon tool %}
-> 3. Select in the drop-down menues `Taxonomy`: "Homo sapiens (Human)" and `reviewed`: "UniprotKB/Swiss-Prot (reviewed only)".
+> 3. Select in the drop-down menus `Taxonomy`: "Homo sapiens (Human)" and `reviewed`: "UniprotKB/Swiss-Prot (reviewed only)".
 > 4. Click on `Execute`. There will be a new dataset named `Protein database` in your history, now.
 > 5. Rename the `Protein database` to `Main database`.
 >
@@ -55,7 +55,7 @@ In this tutorial, we will explore **Protein Database Downloader** {% icon tool %
 
 # Contaminant databases
 
-In proteomic samples, some protein contaminants are commonly present. These protein contamianants are introduced into sample during sample preparation. The source of these contamiants could be an experimenter or contaminated cell culture. In order to avoid misidentification of spectra derived from contaminants, protein sequences of common laboratory contaminants are added to the database. This has two benefits:
+In proteomic samples, some protein contaminants are commonly present. These protein contaminants are introduced into the sample during sample preparation. The source of these contaminants could be an experimenter or contaminated cell culture. In order to avoid misidentification of spectra derived from contaminants, protein sequences of common laboratory contaminants are added to the database. This has two benefits:
 1. Contamination can be observed, heavily contaminated samples can be excluded from analysis.
 2. Contaminant peptides cannot be misassigned to similar peptides in the database reducing the risk of identifying false positives.
 
@@ -102,7 +102,7 @@ A widely used database for common contaminants is the **c**ommon **R**epository 
 
 # Merging databases
 
-Depending on the search algorithm in use,  you might need to merge all FASTA entries (i.e. proteins of interest and contaminants) in a single database. Make sure to merge the tagged versions of your contaminant databases.
+Depending on the search algorithm in use,  you might need to merge all FASTA entries (i.e. proteins of interest and contaminants) into a single database. Make sure to merge the tagged versions of your contaminant databases.
 
 > ### {% icon hands_on %} Hands-on: Merging databases
 >
@@ -134,9 +134,9 @@ The most common method of peptide and protein False Discovery Rate (FDR) calcula
 # Concluding remarks
 {:.no_toc}
 
-In order to keep your proteins databases up-to-date, it is recommended to create a workflow out of the hands-on sections (to learn about workflows see [this tutorial]({{site.baseurl}}/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)). You might also want to combine the mycoplasma databases to a single file, which you then easily can add to each of your main databases.
+In order to keep your proteins databases up-to-date, it is recommended to create a workflow out of the hands-on sections (to learn about workflows see [this tutorial]({{site.baseurl}}/topics/introduction/tutorials/galaxy-intro-101/tutorial.html)). You might also want to combine the mycoplasma databases into a single file, which you then easily can add to each of your main databases.
 
-Often you may not want to use the most recent database for reasons of reproducibility. If so, you can transfer the final database of this tutorial into other histories to work with it.
+Often, you may not want to use the most recent database for reasons of reproducibility. If so, you can transfer the final database of this tutorial into other histories to work with it.
 
 Further reading about construction of the optimal database: ([Kumar et al., Methods in molecular biology, 2017](https://www.ncbi.nlm.nih.gov/pubmed/27975281)).
 
